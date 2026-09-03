@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+:root {
+  --page-bg:    #eef0f7;
+  --card-bg:    #ffffff;
+  --navy:       #1e3478;
+  --navy-mid:   #2c4da0;
+  --text:       #3a4260;
+  --muted:      #6a7090;
+  --soft:       #9298b0;
+  --border:     rgba(20, 40, 120, 0.11);
+  --footer-bg:  #dedad2;
+  --footer-tx:  #706a62;
+
+  /* XP raised button gradient */
+  --btn-grad: linear-gradient(to bottom, #f8faff 0%, #eef2fc 30%, #dde5f8 65%, #e8eeff 100%);
+  --btn-grad-hover: linear-gradient(to bottom, #eef4ff 0%, #d8e8ff 30%, #c8d8ff 65%, #d4dcff 100%);
+  --btn-grad-active: linear-gradient(to bottom, #d4dcf8, #dce4fc);
+
+  /* XP raised card shadow */
+  --card-shadow:
+    0 2px 8px rgba(20, 40, 120, 0.08),
+    0 1px 2px rgba(20, 40, 120, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
+
+  /* Sunken input */
+  --input-shadow: inset 0 1px 4px rgba(20, 40, 120, 0.1), 0 2px 6px rgba(20, 40, 120, 0.06);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: var(--page-bg);
+  color: var(--text);
+  font-family: "Trebuchet MS", "Segoe UI", Verdana, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Subtle page inset border */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* XP raised card */
+.xp-card {
+  background: linear-gradient(to bottom, #ffffff, #f6f8fe);
+  border: 1px solid rgba(20, 40, 120, 0.13);
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+}
+
+/* XP chip / tag */
+.xp-chip {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  background: linear-gradient(to bottom, #eef2ff, #e0e8fc);
+  border: 1px solid rgba(40, 70, 180, 0.18);
+  color: var(--navy-mid);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+/* XP back / utility button */
+.xp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  background: linear-gradient(to bottom, #f4f6fc, #e4e8f4);
+  border: 1px solid #b0b8d0;
+  border-top-color: #c8d0e4;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--navy);
+  cursor: pointer;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 1px 3px rgba(20, 40, 120, 0.12);
+  transition: background 0.1s;
+}
+.xp-btn:hover {
+  background: linear-gradient(to bottom, #eef2ff, #dce4ff);
+}
+.xp-btn:active {
+  background: var(--btn-grad-active);
+  box-shadow: inset 1px 1px 3px rgba(20, 40, 120, 0.18);
+  transform: translateY(1px);
+}
+
+/* Section group label */
+.group-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--soft);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.group-label::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: rgba(20, 40, 120, 0.1);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-up {
+  animation: fadeUp 0.22s ease forwards;
+}
