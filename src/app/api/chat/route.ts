@@ -12,7 +12,7 @@ export async function POST(req: Request) {
     const { messages } = await req.json();
 
     const result = streamText({
-      model: groq("groq/compound-mini"),
+      model: groq("groq/compound"),
       system: SYSTEM_PROMPT,
       messages,
     });

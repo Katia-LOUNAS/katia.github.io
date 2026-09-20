@@ -40,7 +40,7 @@ export default function ResumeResponse() {
       >
         <div>
           <div style={{ fontSize: 14, fontWeight: 700, color: "var(--navy)", marginBottom: 2 }}>
-            Katia Lounas — Resume
+            Katia Lounas, Resume
           </div>
           <div style={{ fontSize: 12, color: "var(--muted)" }}>
             AI &amp; Data Engineer &nbsp;·&nbsp; Available immediately

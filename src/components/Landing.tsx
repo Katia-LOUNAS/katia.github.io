@@ -109,7 +109,7 @@ export default function Landing({ onNavigate, onAsk }: LandingProps) {
         Hey, I&apos;m Katia
       </h1>
       <p style={{ fontSize: 16, color: "var(--muted)", marginBottom: 16 }}>
-        AI &amp; Data Engineer — Paris, France
+        AI &amp; Data Engineer, Paris, France
       </p>
       <p
         style={{
@@ -121,8 +121,8 @@ export default function Landing({ onNavigate, onAsk }: LandingProps) {
           marginBottom: 32,
         }}
       >
-        No scrolling required. Ask me anything about my work — or click a
-        shortcut — and I&apos;ll answer it myself.
+        No scrolling required. Ask me anything about my work, or click a
+        shortcut, and I&apos;ll answer it myself.
       </p>
 
       {/* Input bar */}

@@ -20,7 +20,7 @@ function ProjectCard({ project }: { project: Project }) {
         boxShadow: "0 1px 4px rgba(20,40,120,0.06), inset 0 1px 0 rgba(255,255,255,0.9)",
       }}
     >
-      {/* Card header — always visible */}
+      {/* Card header, always visible */}
       <div style={{ padding: "16px 18px" }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 6 }}>
           <div>
@@ -103,6 +103,7 @@ function ProjectCard({ project }: { project: Project }) {
           </div>
 
           {/* Challenges */}
+          {bd.challenges.length > 0 && (
           <div>
             <div className="group-label" style={{ marginBottom: 8 }}>Challenges</div>
             <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
@@ -125,8 +126,10 @@ function ProjectCard({ project }: { project: Project }) {
               ))}
             </div>
           </div>
+          )}
 
           {/* Solutions */}
+          {bd.solutions.length > 0 && (
           <div>
             <div className="group-label" style={{ marginBottom: 8 }}>How I solved them</div>
             <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
@@ -149,8 +152,10 @@ function ProjectCard({ project }: { project: Project }) {
               ))}
             </div>
           </div>
+          )}
 
           {/* Outcome */}
+          {bd.outcome && (
           <div
             style={{
               background: "linear-gradient(to bottom, #eef2ff, #e4eafc)",
@@ -164,6 +169,7 @@ function ProjectCard({ project }: { project: Project }) {
             </div>
             <p style={{ fontSize: 13, color: "var(--navy)", lineHeight: 1.7 }}>{bd.outcome}</p>
           </div>
+          )}
         </div>
       )}
     </div>
