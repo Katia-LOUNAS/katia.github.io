@@ -1,0 +1,233 @@
+{
+  "personal": {
+    "name": "Katia Lounas",
+    "title": "AI & Data Engineer",
+    "location": "Paris, France",
+    "availability": "available immediately",
+    "bio": "I'm an AI and Data Engineer working on agentic systems, LLM evaluation, and custom data pipelines. I hold a dual Master's in Data Science and Intelligent Computer Systems. Recently, my work has focused on making LLMs reliable in production, specifically building validation layers to stop hallucinations in data extraction and benchmarking model outputs. I enjoy turning unstructured data into clean, working code and building AI tools that actually work consistently.",
+    "shortBio": "AI & Data Engineer with hands-on experience in LLM integration, prompt engineering, model evaluation, and Python-based machine learning pipelines.",
+    "email": "lk.lounas.katia@gmail.com",
+    "linkedin": "https://linkedin.com/in/katia-lounas",
+    "github": "https://github.com/Katia-LOUNAS",
+    "languages": [
+      "French (native)",
+      "English (advanced)",
+      "Kabyle (native)"
+    ]
+  },
+  "experience": [
+    {
+      "company": "Apiday",
+      "location": "Paris, France",
+      "role": "AI Quality Engineer (Apprentice)",
+      "type": "Apprenticeship",
+      "startDate": "December 2025",
+      "endDate": "September 2026",
+      "bullets": [
+        "Built and monitored agentic workflows to automate ESG data extraction, reduce hallucinations, and data validation"
+      ],
+      "detail": "At Apiday, I focused on applying AI to sustainability and ESG data processing. My main project involved building and refining an agentic pipeline designed to automatically extract ESG data from source documents and validate it, which significantly reduced the time our team spent on manual reviews. I also helped develop a natural language chat agent that allowed clients to query their platform data directly.\n\nWorking on these systems gave me practical experience with the real-world challenges of agentic AI, mainly hallucinations and unreliability. To handle this, I worked on validation systems and prompt techniques that forced agents to reason through steps before returning an answer, drastically improving output reliability. I also set up automated monitoring and evaluation on Google Cloud Platform to track agent behavior, catch failures in production, and continuously refine prompts based on edge cases.",
+      "tags": [
+        "LangChain",
+        "OpenAI API",
+        "Agentic AI",
+        "GCP",
+        "Python"
+      ]
+    },
+    {
+      "company": "Eden AI",
+      "location": "Lyon, France",
+      "role": "AI Engineering Intern",
+      "type": "Internship",
+      "startDate": "July 2025",
+      "endDate": "September 2025",
+      "bullets": [
+        "Integrated multi-provider LLMs behind a unified API and built evaluation leaderboards to identify and resolve agent and RAG issues"
+      ],
+      "detail": "During my internship at Eden AI, I got deep into the practical mechanics of agentic systems and multi-provider LLM integrations. I worked on connecting over 10 different LLM providers behind Eden AI's unified endpoint, writing and testing prompts to ensure consistent performance regardless of the underlying model.\n\nI spent a lot of time learning how to benchmark LLM outputs and measure accuracy. To do this, I built an LLM leaderboard using frameworks like Ragas and Opik to run systematic evaluations. Through this process, I learned how to identify standard issues in Retrieval-Augmented Generation (RAG) and agent workflows, such as context retrieval drift, weak grounding, and prompt sensitivity, and learned practical ways to debug and resolve them.",
+      "tags": [
+        "Ragas",
+        "Opik",
+        "Prompt Engineering",
+        "Eden AI API",
+        "Python"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Wildfire Spread Prediction",
+      "category": "Machine Learning · Thesis Research",
+      "description": "Processed satellite data and evaluated TensorFlow deep learning models to predict spatial wildfire propagation",
+      "stack": [
+        "TensorFlow",
+        "xarray",
+        "Python",
+        "Scikit-learn"
+      ],
+      "links": {
+        "github": "https://github.com/PFE-Wildfire-spreed-predection"
+      },
+      "featured": true,
+      "breakdown": {
+        "what": "For my thesis research project, I worked on predicting wildfire propagation using satellite data. I took the raw SeasFire satellite dataset and used Python and xarray to clean, align, and transform multi-spectral spatial data into structured tensors suitable for deep learning pipelines.\n\nUsing TensorFlow, I built and evaluated several deep learning and machine learning architectures to model how fires spread over time. I ran comparative experiments across different model structures to evaluate their spatial prediction accuracy and figure out which approach best handled complex environmental variables.",
+        "challenges": [],
+        "solutions": [],
+        "outcome": ""
+      }
+    },
+    {
+      "title": "LLM-Driven Social Simulation",
+      "category": "Research · AI",
+      "description": "Simulated human social dynamics using LLM agents and analyzed interaction graphs using data mining tools",
+      "stack": [
+        "Python",
+        "LLMs",
+        "SQLite3",
+        "NetworkX",
+        "Matplotlib"
+      ],
+      "links": {
+        "github": "https://github.com/Katia-LOUNAS/y-social-research-lab/tree/main"
+      },
+      "featured": true,
+      "breakdown": {
+        "what": "During my lab research assistantship, I worked on simulating complex social dynamics using Large Language Models on the Y Social platform. I set up LLM agent workflows to simulate individual human behaviors and track interactions within a controlled digital environment.\n\nTo analyze the simulation outputs, I built data mining scripts using Python, SQLite3, NetworkX, and Matplotlib. I parsed graph structures and interaction logs to extract behavioral patterns, contributing key empirical findings on agent stability and interaction realism to the lab's ongoing research on LLM simulations.",
+        "challenges": [],
+        "solutions": [],
+        "outcome": ""
+      }
+    },
+    {
+      "title": "EcoTrajet",
+      "category": "Web Application",
+      "description": "Developed an interactive web app with Next.js and Leaflet to calculate and compare transport carbon footprints along custom routes",
+      "stack": [
+        "Next.js",
+        "Leaflet",
+        "OSRM",
+        "Nominatim",
+        "Jest",
+        "GitLab CI/CD"
+      ],
+      "links": {
+        "github": "https://github.com/Katia-LOUNAS"
+      },
+      "featured": false,
+      "breakdown": {
+        "what": "EcoTrajet is a web application designed to help users calculate, visualize, and compare the carbon footprint of different transportation options for a given route.\n\nI worked on both the backend logic and frontend integration, using Next.js for the core app, Leaflet for map rendering, and OSRM with Nominatim for routing and geocoding. I also set up unit testing with Jest and integrated automated test runs into a GitLab CI/CD pipeline to keep the application stable across updates.",
+        "challenges": [],
+        "solutions": [],
+        "outcome": ""
+      }
+    },
+    {
+      "title": "Multi-Model Information Retrieval System",
+      "category": "NLP · IR",
+      "description": "Implemented and benchmarked Boolean, vector-space, probabilistic, and neural search algorithms on standard test collections",
+      "stack": [
+        "NLTK",
+        "Transformers",
+        "Python"
+      ],
+      "links": {
+        "github": "https://github.com/Katia-LOUNAS/Information-retrieval-system/tree/main"
+      },
+      "featured": false,
+      "breakdown": {
+        "what": "I built an Information Retrieval (IR) application designed to index, search, and evaluate document relevance across several classic and modern retrieval methodologies. The project implemented Boolean, vector-space (TF-IDF), probabilistic (BM25), and neural-based retrieval models.\n\nI used Python, NLTK, and Transformers to build the text processing and embedding pipeline. To measure search quality, I ran benchmark evaluations against the standard LISA test collection, comparing precision, recall, and MAP across all four model types.",
+        "challenges": [],
+        "solutions": [],
+        "outcome": ""
+      }
+    }
+  ],
+  "skills": {
+    "AI & LLM": [
+      "LangChain",
+      "OpenAI API",
+      "Ragas",
+      "Opik",
+      "Agentic AI",
+      "Prompt Engineering",
+      "LLM Evaluation"
+    ],
+    "Data & Machine Learning": [
+      "Python",
+      "TensorFlow",
+      "Scikit-learn",
+      "Pandas",
+      "NumPy",
+      "xarray",
+      "NetworkX",
+      "Matplotlib",
+      "NLTK",
+      "Transformers",
+      "Power BI",
+      "Tableau"
+    ],
+    "Web & Cloud": [
+      "Next.js",
+      "JavaScript",
+      "HTML/CSS",
+      "GCP",
+      "Git",
+      "GitLab",
+      "CI/CD"
+    ],
+    "Databases": [
+      "MongoDB",
+      "MySQL",
+      "SQLite3",
+      "Oracle"
+    ],
+    "Creative Tools": [
+      "Figma",
+      "Adobe Illustrator",
+      "Adobe Premiere Pro"
+    ]
+  },
+  "education": [
+    {
+      "degree": "M.Sc. Data Science & Business Intelligence",
+      "school": "EDC Paris",
+      "location": "Paris, France",
+      "startYear": "2025",
+      "endYear": "2026",
+      "honors": null
+    },
+    {
+      "degree": "Master 1, Computer Science",
+      "school": "Université Claude Bernard Lyon 1",
+      "location": "Lyon, France",
+      "startYear": "2024",
+      "endYear": "2025",
+      "honors": null
+    },
+    {
+      "degree": "M.Sc. Intelligent Computer Systems",
+      "school": "USTHB",
+      "location": "Algeria",
+      "startYear": "2022",
+      "endYear": "2024",
+      "honors": "Graduated with High Honors"
+    }
+  ],
+  "contact": {
+    "email": "lk.lounas.katia@gmail.com",
+    "linkedin": "https://linkedin.com/in/katia-lounas",
+    "github": "https://github.com/Katia-LOUNAS"
+  },
+  "resume": {
+    "downloadUrl": "/resume.pdf",
+    "lastUpdated": "2026"
+  },
+  "chatbot": {
+    "name": "Katia",
+    "personality": "direct, confident, warm",
+    "tone": "professional but conversational",
+    "language": "english",
+    "responseStyle": "concise and informative"
+  }
+}

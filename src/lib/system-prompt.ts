@@ -1,4 +1,4 @@
-import config from "../../portfolio-config.json";
+import config from "@/portfolio-config.json";
 
 const { personal, experience, projects, skills, education } = config;
 

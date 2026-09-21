@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import config from "../../../portfolio-config.json";
+import config from "@/portfolio-config.json";
 
 type Job = (typeof config.experience)[number] & { detail?: string };
 

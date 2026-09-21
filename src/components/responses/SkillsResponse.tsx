@@ -1,4 +1,4 @@
-import config from "../../../portfolio-config.json";
+import config from "@/portfolio-config.json";
 
 export default function SkillsResponse() {
   const skills = config.skills as Record<string, string[]>;

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import config from "../../../portfolio-config.json";
+import config from "@/portfolio-config.json";
 
 type Project = (typeof config.projects)[number];
 
