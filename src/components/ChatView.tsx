@@ -104,11 +104,7 @@ export default function ChatView({ initialQuery, onBack }: ChatViewProps) {
                 whiteSpace: "pre-wrap",
               }}
             >
-              {msg.parts
-                ? msg.parts
-                    .filter((p) => p.type === "text")
-                    .map((p, i) => <span key={i}>{p.text}</span>)
-                : msg.content}
+              {msg.content}
             </div>
           </div>
         ))}

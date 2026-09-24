@@ -12,7 +12,7 @@ export async function POST(req: Request) {
     const { messages } = await req.json();
 
     const result = streamText({
-      model: groq("groq/compound"),
+      model: groq("openai/gpt-oss-120b"),
       system: SYSTEM_PROMPT,
       messages,
     });
